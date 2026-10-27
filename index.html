@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fun projects, experiments, and random ideas by Clinton W. Gray.">
+
+  <title>Clinton W. Gray | Fun Projects</title>
+
+  <style>
+    :root {
+      --bg: #101827;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #34d399;
+      --border: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 35px 25px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+    }
+
+    .status {
+      color: var(--muted);
+      letter-spacing: normal;
+    }
+
+    .status::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    main {
+      padding: 110px 0 75px;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      line-height: 1.15;
+      letter-spacing: -0.04em;
+      margin: 0 0 25px;
+    }
+
+    .intro {
+      font-size: 1.3rem;
+      max-width: 650px;
+      color: #cbd5e1;
+    }
+
+    .tagline {
+      color: var(--muted);
+      margin-top: 25px;
+    }
+
+    section {
+      border-top: 1px solid var(--border);
+      padding: 35px 0;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 0;
+    }
+
+    section p {
+      color: #cbd5e1;
+      max-width: 650px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding-top: 25px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+      }
+
+      main {
+        padding: 75px 0 55px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <strong>CLINTON W. GRAY</strong>
+      <span class="status">A work in progress</span>
+    </header>
+
+    <main>
+      <h1>A little corner of<br>the internet.</h1>
+
+      <p class="intro">
+        Welcome to my collection of fun projects,
+        experiments, random ideas, and things
+        I just felt like making.
+      </p>
+
+      <p class="tagline">
+        No grand plan. Just curiosity and a place to play.
+      </p>
+    </main>
+
+    <section>
+      <h2>What's happening here?</h2>
+
+      <p>
+        Not much yet! But over time, this space will
+        fill up with little experiments, useful tools,
+        and whatever else catches my interest.
+      </p>
+
+      <p>
+        Some things might be useful. Others might
+        just be fun. That's kind of the point.
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2026 Clinton W. Gray.
+      Made for the fun of it.
+    </footer>
+
+  </div>
+</body>
+</html>
